@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Table Generator</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+  </style>
+
+
+  <style>
+    .header {
+      margin-top: 5vh;
+    }
+
+    .card-header {
+      font-size: 1.8rem;
+      font-weight: 600;
+      /* background-color:#2b8e00!important; */
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 500;
+
+    }
+
+    .card-footer {
+      text-align: center;
+      font-weight: bold;
+
+    }
+
+    .bi {
+      color: rgb(243, 61, 61) !important;
+    }
+
+    body {
+      /* background-color: rgb(18, 110, 109); */
+      background-color: rgb(1, 61, 82);
+    }
+
+    .card {
+      width: 90vw;
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 10vh;
+    }
+
+    .screen {
+      
+      /* font-family: 'Courier Prime', monospace; */
+      font-family: 'Open Sans', sans-serif;
+      color: #458a03 !important;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-align: start;
+      margin-bottom: 10px;
+    }
+  </style>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <div class="header d-flex justify-content-center align-content-center">
+
+    <div class="card border-all text-white">
+      <div class="card-header text-center bg-success text-white ">
+        Table Generator
+      </div>
+      <div class="card-body  ">
+        <form class="form-inline d-flex justify-content-center flex-wrap " id="formid">
+          <div class="from-group  mr-2 ml-2 my-2">
+
+            <input type="number" id="inpbox" class="form-control text-center " placeholder="Enter Number">
+          </div>
+        </form>
+        <br>
+        <div class="d-flex justify-content-center flex-wrap">
+          <button class="btn btn-success ml-2 mr-2 pr-5 pl-5 my-2  " id="calcbtn" onclick="obtainBox()">Get
+            Table</button>
+
+          <button class="btn btn-danger ml-2 mr-2 my-2 " id="clear" onclick=clearbtn()>Clear</button>
+        </div>
+      </div>
+      <br>
+      <div class="screen w-45 m-auto ">
+        <div id="s1"></div>
+        <div id="s2"></div>
+        <div id="s3"></div>
+        <div id="s4"></div>
+        <div id="s5"></div>
+        <div id="s6"></div>
+        <div id="s7"></div>
+        <div id="s8"></div>
+        <div id="s9"></div>
+        <div id="s10"></div>
+      </div>
+
+      <div class="card-footer text-body-secondary text-secondary mt-4">
+        Created by <i class="bi bi-heart-fill"></i> Dipesh
+      </div>
+    </div>
+
+  </div>
+  <!-- Table Generator Logic -->
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
