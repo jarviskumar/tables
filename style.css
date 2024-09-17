@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap')
+
+*{
+    margin: 0;
+    padding: 0;
+
+  }
+  
+
+  nav{
+    background-color:#00712D;
+  }
+  .navbar-brand{
+    font-size: 2rem;
+    font-family: "Jost", sans-serif;
+
+  }
+  .container{
+
+    height: 100%;
+  }
+  .screen{
+    margin-bottom: 60px;
+  }
+  .list{
+    color:#00712D;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: "Jost", sans-serif;
+
+  }
+.errorBox{
+  color: #ED4545;
+  font-family: "Jost", sans-serif;
+
+}
+  .foot{
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color:#C7C7C7;
+  }
